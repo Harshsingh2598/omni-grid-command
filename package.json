@@ -1,0 +1,25 @@
+{
+  "name": "smartcity-ai-command-center",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:frontend": "vite",
+    "dev:backend": "python -m uvicorn backend.app:app --reload",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "apexcharts": "^4.0.0",
+    "react-apexcharts": "^1.9.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.2.11",
+    "typescript": "^5.4.5",
+    "concurrently": "^8.2.2"
+  }
+}

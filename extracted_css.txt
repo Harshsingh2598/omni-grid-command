@@ -1,0 +1,111 @@
+﻿Created At: 2026-05-25T14:57:06Z
+Completed At: 2026-05-25T14:57:06Z
+File Path: `file:///c:/Users/Harsh%20singh/Downloads/FitPulse_AI_Assistant_TERMINAL_READY/FitPulse_AI_Assistant/static/style.css`
+Total Lines: 867
+Total Bytes: 24514
+Showing lines 1 to 800
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+2: 
+3: /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• VARIABLES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+4: :root {
+5:     --bg: #030712;
+6:     --bg-card: rgba(12, 20, 40, 0.55);
+7:     --bg-card-hover: rgba(18, 30, 60, 0.7);
+8:     --bg-sidebar: rgba(5, 10, 22, 0.92);
+9:     --cyan: #00f5ff;
+10:     --pink: #ff2bd6;
+11:     --purple: #8a2bff;
+12:     --lime: #39ff14;
+13:     --orange: #ff7a18;
+14:     --text: #f1f5f9;
+15:     --text-muted: #94a3b8;
+16:     --text-dim: #64748b;
+17:     --border: rgba(255,255,255,0.07);
+18:     --border-glow: rgba(0,245,255,0.25);
+19:     --radius: 20px;
+20:     --radius-sm: 12px;
+21:     --shadow-cyan: 0 0 25px rgba(0,245,255,0.15);
+22:     --shadow-pink: 0 0 25px rgba(255,43,214,0.15);
+23:     --ease: cubic-bezier(0.4, 0, 0.2, 1);
+24: }
+25: 
+26: /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• RESET â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+27: *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+28: 
+29: html { scroll-behavior: smooth; }
+30: 
+31: body {
+32:     font-family: 'Inter', system-ui, sans-serif;
+33:     background: var(--bg);
+34:     color: var(--text);
+35:     min-height: 100vh;
+36:     overflow-x: hidden;
+37:     line-height: 1.6;
+38: }
+39: 
+40: h1,h2,h3,h4,h5,h6 {
+41:     font-family: 'Outfit', sans-serif;
+42:     font-weight: 800;
+43:     letter-sp
+<truncated 22720 bytes>
+   background: rgba(255,255,255,0.04);
+744:     transform: translateY(-2px);
+745: }
+746: .day-name {
+747:     color: var(--cyan);
+748:     font-family: 'Outfit', sans-serif;
+749:     font-size: 16px;
+750:     font-weight: 800;
+751:     margin-bottom: 12px;
+752:     padding-bottom: 8px;
+753:     border-bottom: 1px solid rgba(255,255,255,0.06);
+754: }
+755: .exercise-row {
+756:     display: flex;
+757:     justify-content: space-between;
+758:     font-size: 13px;
+759:     padding: 6px 0;
+760: }
+761: .exercise-reps { color: var(--text-muted); font-weight: 600; }
+762: 
+763: /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PREDICTION CARD â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+764: .predict-card {
+765:     text-align: center;
+766:     display: flex;
+767:     flex-direction: column;
+768:     align-items: center;
+769:     justify-content: center;
+770:     min-height: 280px;
+771:     position: relative;
+772:     overflow: hidden;
+773:     background: radial-gradient(ellipse at center, rgba(0,245,255,0.08) 0%, var(--bg-card) 70%) !important;
+774:     border: 1px dashed rgba(0,245,255,0.25) !important;
+775: }
+776: .predict-card.active {
+777:     border-style: solid !important;
+778:     border-color: var(--cyan) !important;
+779:     box-shadow: var(--shadow-cyan);
+780: }
+781: .predict-label {
+782:     font-size: 13px;
+783:     font-weight: 700;
+784:     color: var(--text-muted);
+785:     letter-spacing: 0.08em;
+786:     text-transform: uppercase;
+787: }
+788: .predict-value {
+789:     font-family: 'Outfit', sans-serif;
+790:     font-size: 64px;
+791:     font-weight: 900;
+792:     color: var(--lime);
+793:     text-shadow: 0 0 20px rgba(57,255,20,0.3);
+794:     margin: 6px 0;
+795:     line-height: 1;
+796: }
+797: .predict-unit {
+798:     font-size: 20px;
+799:     font-weight: 700;
+800:     color: var(--text-dim);
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
+
