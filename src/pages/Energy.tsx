@@ -31,7 +31,8 @@ const Energy: React.FC = () => {
           setTimeout(async () => {
             setIsScanning(false);
             try {
-              const res = await fetch('http://localhost:8000/predict/energy', {
+              const apiBase = window.location.hostname === 'localhost' ? 'http://localhost:8000' : '/backend';
+              const res = await fetch(`${apiBase}/predict/energy`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
