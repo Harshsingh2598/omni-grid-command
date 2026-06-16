@@ -31,7 +31,7 @@ const Emergency: React.FC = () => {
           setTimeout(async () => {
             setIsScanning(false);
             try {
-              const apiBase = window.location.hostname === 'localhost' ? 'http://localhost:8000' : '/backend';
+              const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:8000';
               const res = await fetch(`${apiBase}/predict/emergency`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
