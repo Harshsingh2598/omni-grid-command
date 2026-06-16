@@ -1,2 +1,11 @@
+[project]
+name = "omni-grid-command-backend"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "pydantic",
+    "websockets"
+]
+
 [tool.vercel]
 entrypoint = "backend.app:app"
